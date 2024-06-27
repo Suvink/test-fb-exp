@@ -5,7 +5,7 @@ const app = express();
 const port = 8000;
 const bodyParser = require("body-parser");
 
-const serviceAccount = require("./uom-session-completed-firebase-adminsdk-xa60n-d6d20a6502.json");
+const serviceAccount = require("./service-account.json");
 app.use(bodyParser.json());
 initializeApp({
     credential: cert(serviceAccount),

@@ -5,7 +5,7 @@ const app = express();
 const port = 8000;
 const bodyParser = require("body-parser");
 
-const serviceAccount = require("./service-account.json");
+const serviceAccount = require("public/service-account.json");
 app.use(bodyParser.json());
 initializeApp({
     credential: cert(serviceAccount),
